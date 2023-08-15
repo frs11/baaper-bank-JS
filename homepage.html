@@ -12,6 +12,76 @@
     <link rel="shortcut icon" href="salary.png" type="image/x-icon">
 </head>
 <body>
+    <header class="w-3/5 mx-auto mt-20 text-center">
+        <h1 class="text-4xl font-bold">Welcome to <br> <span class="font-tektur text-6xl text-purple-600 font-medium">Baaper Bank</span></h1>
+    </header>
+    <main class="w-10/12 mx-auto mt-20">
+        <section class="w-full mx-auto">
+            <div class="grid grid-cols-4 gap-3">
+
+                <!-- Deposit Amount -->
+                <div class="bg-gradient-to-br from-lime-200 to-sky-200 shadow-lg block justify-center items-center rounded-lg py-16">
+                    <h1 class="text-2xl font-semibold text-center">Deposit</h1> <br>
+                    <h2 class="text-2xl font-semibold text-center">$ <span id="depositAmount">00</span></h2>
+                </div>
+
+                <!-- Withdraw Amount -->
+                <div class="bg-gradient-to-br from-orange-200 to-sky-200 block shadow-lg justify-center items-center rounded-lg py-16">
+                    <h1 class="text-2xl font-semibold text-center">Withdraw</h1> <br>
+                    <h2 class="text-2xl font-semibold text-center">$ <span id="withdrawAmount">00</span></h2>
+                </div>
+
+                <!-- Loan Amount -->
+                <div class="bg-gradient-to-br from-red-200 to-sky-200 block justify-center shadow-lg items-center rounded-lg py-16">
+                    <h1 class="text-2xl font-semibold text-center">Loan</h1> <br>
+                    <h2 class="text-2xl font-semibold text-center">$ <span id="loanAmount">00</span></h2>
+                </div>
+
+                <!-- Balance Amount -->
+                <div class="bg-gradient-to-br from-amber-200 to-sky-200 block justify-center items-center shadow-lg rounded-lg py-16">
+                    <h1 class="text-2xl font-semibold text-center">Balance</h1> <br>
+                    <h2 class="text-2xl font-semibold text-center">$ <span id="balanceAmount">00</span></h2>
+                </div>
     
+            </div>
+            
+        </section>
+
+
+        <section class="w-full mx-auto my-28">
+            <div class="grid grid-cols-3 gap-3">
+
+                <!-- Deposit Box -->
+                <div class="bg-gradient-to-br from-lime-200 to-sky-200 shadow-lg rounded-lg py-10 px-10">
+                    <h1 class="text-2xl font-semibold mb-4">Deposit</h1>
+
+                    <input type="number" class="block w-full pl-1 ml-3 mt-2" id="depositAmountHolder" placeholder="Insert the amount you want to deposit">
+
+                    <button id="depositButton" class="px-4 py-2 ml-4 bg-lime-700 text-white shadow-sm hover:bg-lime-500 hover:text-black rounded-md mt-4" type="submit">Deposit</button>
+                </div>
+
+                <!-- Withdraw Box -->
+                <div class="bg-gradient-to-br from-orange-200 to-sky-200 shadow-lg rounded-lg py-10 px-10">
+                    <h1 class="text-2xl font-semibold mb-4">Withdraw</h1>
+
+                    <input type="number" class="block w-full pl-1 ml-3 mt-2" id="withdrawAmountHolder" placeholder="Insert the amount you want to withdraw">
+
+                    <button id="withdrawButton" class="px-4 py-2 ml-4 bg-orange-600 text-white shadow-sm hover:bg-orange-400 hover:text-black rounded-md mt-4" type="submit">Withdraw</button>
+                </div>
+
+                <!-- Loan Box -->
+                <div class="bg-gradient-to-br from-red-200 to-sky-200 shadow-lg rounded-lg py-10 px-10">
+                    <h1 class="text-2xl font-semibold mb-4">Take Loan</h1>
+
+                    <input type="number" class="block w-full pl-1 ml-3 mt-2" id="loanAmountHolder" placeholder="Insert the amount you want to take loan">
+
+                    <button id="loanButton" class="px-4 py-2 ml-4 bg-red-700 text-white shadow-sm hover:bg-red-400 hover:text-black rounded-md mt-4" type="submit">Loan</button>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+    <script src="amountcalc.js"></script>
 </body>
 </html>
