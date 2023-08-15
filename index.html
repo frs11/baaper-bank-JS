@@ -3,10 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Baaper Bank | Login</title>
+    <title>Baaper Bank | Registration</title>
+
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Tektur:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="salary.png" type="image/x-icon">
 </head>
-<body>
+<body class="bg-slate-300">
+    <header class="w-3/5 mx-auto mt-20 text-center">
+        <h1 class="text-2xl font-bold">Welome to <br> <span class="font-tektur text-4xl text-purple-600 font-medium">Baaper Bank</span></h1>
+    </header>
+    <main class="w-3/5 mx-auto mt-20">
+        <section class="bg-slate-200 w-3/4 mx-auto shadow-lg">
+            <div class="py-10 px-10">
+                <h2 class="text-center font-semibold mb-6 text-xl">Create an Account</h2>
+
+
+                <h3 class="ml-3">Enter Your Full Name</h3>
+                <input type="text" class="block w-full mt-1 pl-6 ml-3 mb-2" id="fullNameHolder" placeholder="Insert your full name">
+
+                <h3 class="ml-3">Enter Your Email</h3>
+                <input type="email" class="block w-full mt-1 pl-6 ml-3 mb-2" id="emailHolder" placeholder="Insert your email">
+
+                <h3 class="ml-3">Type a Strong Password</h3>
+                <input type="password" class="block w-full mt-1 pl-6 ml-3 mb-2" id="passwordHolder" placeholder="Insert your password">
+
+                <h3 class="ml-3">Retype Your Password</h3>
+                <input type="password" class="block w-full mt-1 pl-6 ml-3 mb-2" id="confirmPasswordHolder" placeholder="Insert your password again">
+
+                <button id="registrationButton" class="px-4 py-1 ml-4 bg-purple-700 hover:bg-sky-300 hover:text-black text-white rounded-md mt-4" type="submit">Create Account</button>
+            </div>
+        </section>
+
+    </main>
     
+<!-- border-red-500 border border-solid -->
+
+    <script src="calculations.js"></script>
 </body>
 </html>
