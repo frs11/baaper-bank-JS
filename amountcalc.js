@@ -1,9 +1,9 @@
 // Deposit Money
 document.getElementById('depositButton').addEventListener('click', function()
 {
-    let givenAmount = parseInt(document.getElementById('depositAmountHolder').value);
-    let amountDeposit = parseInt(document.getElementById('depositAmount').innerText);
-    let amountBalance = parseInt(document.getElementById('balanceAmount').innerText);
+    let givenAmount = parseFloat(document.getElementById('depositAmountHolder').value);
+    let amountDeposit = parseFloat(document.getElementById('depositAmount').innerText);
+    let amountBalance = parseFloat(document.getElementById('balanceAmount').innerText);
     amountDeposit += givenAmount;
     amountBalance += givenAmount;
     document.getElementById('depositAmount').innerText = amountDeposit;
@@ -17,9 +17,9 @@ document.getElementById('depositButton').addEventListener('click', function()
 // Withdraw Money
 document.getElementById('withdrawButton').addEventListener('click', function()
 {
-    let givenAmount = parseInt(document.getElementById('withdrawAmountHolder').value);
-    let amountWithdraw = parseInt(document.getElementById('withdrawAmount').innerText);
-    let amountBalance = parseInt(document.getElementById('balanceAmount').innerText);
+    let givenAmount = parseFloat(document.getElementById('withdrawAmountHolder').value);
+    let amountWithdraw = parseFloat(document.getElementById('withdrawAmount').innerText);
+    let amountBalance = parseFloat(document.getElementById('balanceAmount').innerText);
     amountWithdraw += givenAmount;
     amountBalance -= givenAmount;
     document.getElementById('withdrawAmount').innerText = amountWithdraw;
@@ -33,9 +33,9 @@ document.getElementById('withdrawButton').addEventListener('click', function()
 // Loan Money
 document.getElementById('loanButton').addEventListener('click', function()
 {
-    let givenAmount = parseInt(document.getElementById('loanAmountHolder').value);
-    let amountLoan = parseInt(document.getElementById('loanAmount').innerText);
-    let amountBalance = parseInt(document.getElementById('balanceAmount').innerText);
+    let givenAmount = parseFloat(document.getElementById('loanAmountHolder').value);
+    let amountLoan = parseFloat(document.getElementById('loanAmount').innerText);
+    let amountBalance = parseFloat(document.getElementById('balanceAmount').innerText);
     amountLoan += givenAmount;
     amountBalance -= givenAmount;
     document.getElementById('loanAmount').innerText = amountLoan;
