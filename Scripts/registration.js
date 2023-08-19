@@ -15,7 +15,11 @@ document.getElementById('registrationButton').addEventListener('click', function
     if(!givenUserName.length >0 || !givenUserEmail.length >0 || !firstPassword.length >0 || !secondPassword.length >0)
     {
         alert('Please Fill Up all information')
-    }      
+    }
+    else if(!firstPassword.length >=8 || !secondPassword.length >=8)
+    {
+        alert('Password too short. Password must be at least 8 characters long.');
+    }
     else
     {
         if(firstPassword !== secondPassword)
@@ -34,5 +38,6 @@ document.getElementById('registrationButton').addEventListener('click', function
 
             window.location.href = "login-page.html";
         }
+
     }
 })

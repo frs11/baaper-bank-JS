@@ -8,8 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Tektur:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="salary.png" type="image/x-icon">
+    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="shortcut icon" href="Styles/salary.png" type="image/x-icon">
 </head>
 <body>
     <header class="w-3/5 mx-auto mt-20 text-center">
@@ -42,9 +42,7 @@
                     <h1 class="text-2xl font-semibold text-center">Balance</h1> <br>
                     <h2 class="text-2xl font-semibold text-center">$ <span id="balanceAmount">00.00</span></h2>
                 </div>
-    
             </div>
-            
         </section>
 
 
@@ -55,33 +53,34 @@
                 <div class="bg-gradient-to-br from-lime-200 to-sky-200 shadow-lg rounded-lg py-10 px-10">
                     <h1 class="text-2xl font-semibold mb-4">Deposit</h1>
 
-                    <input type="number" class="block w-full pl-1 ml-3 mt-2" id="depositAmountHolder" placeholder="Insert the amount you want to deposit">
+                    <input type="number" class="block w-full pl-1 ml-3 mt-2" id="depositAmountHolder" placeholder="Amount you want to deposit">
 
-                    <button id="depositButton" class="px-4 py-2 ml-4 bg-lime-700 text-white shadow-sm hover:bg-lime-500 hover:text-black rounded-md mt-4" type="submit">Deposit</button>
+                    <button id="depositButton" class="px-4 py-2 ml-4 bg-lime-700 text-white shadow-sm hover:bg-lime-400 hover:text-black rounded-md mt-4" type="submit">Deposit</button>
                 </div>
 
                 <!-- Withdraw Box -->
                 <div class="bg-gradient-to-br from-orange-200 to-sky-200 shadow-lg rounded-lg py-10 px-10">
                     <h1 class="text-2xl font-semibold mb-4">Withdraw</h1>
 
-                    <input type="number" class="block w-full pl-1 ml-3 mt-2" id="withdrawAmountHolder" placeholder="Insert the amount you want to withdraw">
+                    <input type="number" class="block w-full pl-1 ml-3 mt-2" id="withdrawAmountHolder" placeholder="Amount you want to withdraw">
 
-                    <button id="withdrawButton" class="px-4 py-2 ml-4 bg-orange-600 text-white shadow-sm hover:bg-orange-400 hover:text-black rounded-md mt-4" type="submit">Withdraw</button>
+                    <button id="withdrawButton" class="px-4 py-2 ml-4 bg-orange-600 text-white shadow-sm hover:bg-orange-300 hover:text-black rounded-md mt-4" type="submit">Withdraw</button>
                 </div>
 
                 <!-- Loan Box -->
                 <div class="bg-gradient-to-br from-red-200 to-sky-200 shadow-lg rounded-lg py-10 px-10">
                     <h1 class="text-2xl font-semibold mb-4">Take Loan</h1>
 
-                    <input type="number" class="block w-full pl-1 ml-3 mt-2" id="loanAmountHolder" placeholder="Insert the amount you want to take loan">
+                    <input type="number" class="block w-full pl-1 ml-3 mt-2" id="loanAmountHolder" placeholder="Amount you want to take loan">
 
-                    <button id="loanButton" class="px-4 py-2 ml-4 bg-red-700 text-white shadow-sm hover:bg-red-400 hover:text-black rounded-md mt-4" type="submit">Loan</button>
+                    <button id="loanButton" class="px-4 py-2 ml-4 bg-red-700 text-white shadow-sm hover:bg-red-300 hover:text-black rounded-md mt-4" type="submit">Loan</button>
                 </div>
 
             </div>
         </section>
 
     </main>
-    <script src="amountcalc.js"></script>
+    <script src="Scripts/functions.js"></script>
+    <script src="Scripts/amountcalc.js"></script>
 </body>
 </html>
