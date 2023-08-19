@@ -18,7 +18,7 @@ function setInnerTextAmount(location, amount)
 {
     amount = parseFloat(amount); 
     amount = amount.toFixed(2);
-    amount = parseFloat(amount);
+    // amount = parseFloat(amount);
     document.getElementById(location).innerText = amount;
 }
 
